@@ -25,6 +25,12 @@ def test_check_stomach__empty
   assert_equal(0, result)
 end
 
+def test_eat_fish__1
+  @Bear1.eat_fish(@Fish1)
+  result = @Bear1.stomach
+  assert_equal([@Fish1],result)
+end
+
 # def test_check_stomach__2
 #   @Bear1.eat_fish()
 #   @Bear1.eat_fish()
