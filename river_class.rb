@@ -12,7 +12,7 @@ def check_fish
 end
 
 def add_fish_to_river(fish)
-  @name.push(fish)
+  @fish.push(fish)
 end
 
 def find_fish_index(fish)
