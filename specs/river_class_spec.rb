@@ -24,9 +24,9 @@ class TestRiverClass < MiniTest::Test
 
   def test_check_fish
     result = @River2.check_fish()
-    assert_equal(2,result)
+    assert_equal(0,result)
   end
-  
+
   # def test_add_fish_to_river__1
   #   @River1.add_fish_to_river(@Fish1)
   #   result = @River2.check_fish()
