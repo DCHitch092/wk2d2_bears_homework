@@ -19,10 +19,10 @@ def find_fish_index(fish)
   @fish.index(fish)
 end
 
-def lose_fish_from_river()
-  fish_index = 0
-  fish index == find_fish_index(fish) if fish.string?
-  @name.delete(fish_index)
+def lose_fish_from_river(fish)
+  # return @fish.delete(0) if fish != Nil
+  # fish_index = find_fish_index(fish)
+  @fish.delete(fish)
 end
 
 

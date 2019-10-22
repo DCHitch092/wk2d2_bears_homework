@@ -41,11 +41,13 @@ class TestRiverClass < MiniTest::Test
     assert_equal(2,result)
   end
 
-  # def test_lose_fish_from_river
-  #   @River2.lose_fish()
-  #   result = @River2.check_fish()
-  #   assert_equal(1, result)
-  # end
+  def test_lose_fish_from_river
+    @River1.add_fish_to_river(@Fish1)
+    @River1.add_fish_to_river(@Fish2)
+    @River1.lose_fish_from_river(@Fish1)
+    result = @River1.check_fish()
+    assert_equal(1, result)
+  end
 
 
 
