@@ -19,4 +19,8 @@ class Bear
     eat_fish(river.fish[0])
     river.fish.delete_at(0)
   end
+
+  def roar
+    return "#{@name} roared"
+  end
 end

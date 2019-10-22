@@ -51,5 +51,9 @@ def test_take_fish
   assert_equal(1, @River1.check_fish())
 end
 
+def test_roar
+  assert_equal("Papa roared", @Bear1.roar())
+
+end
 
 end
