@@ -15,4 +15,8 @@ class Bear
     @stomach.push(fish)
   end
 
+  def take_fish(river)
+    eat_fish(river.Fish[0])
+    river.Fish.delete_at[0]
+  end
 end
