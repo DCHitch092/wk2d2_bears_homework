@@ -19,12 +19,12 @@ end
 def test_bear_has_stomach
   assert_equal([], @Bear1.stomach)
 end
-#
-# def test_check_stomach__empty
-#   result = @Bear1.check_stomach()
-#   assert_equal(nil, result)
-# end
-#
+
+def test_check_stomach__empty
+  result = @Bear1.check_stomach()
+  assert_equal(0, result)
+end
+
 # def test_check_stomach__2
 #   @Bear1.eat_fish()
 #   @Bear1.eat_fish()
