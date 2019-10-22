@@ -16,7 +16,7 @@ class Bear
   end
 
   def take_fish(river)
-    eat_fish(river.Fish[0])
-    river.Fish.delete_at[0]
+    eat_fish(river.fish[0])
+    river.fish.delete_at(0)
   end
 end

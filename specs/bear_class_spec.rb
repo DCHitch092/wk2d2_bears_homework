@@ -8,8 +8,10 @@ class TestBearClass < MiniTest::Test
 
   def setup
     @Bear1 = Bear.new("Papa")
-    @River1 = River.new("Esk",[@Fish1])
-    # @Fish1 = Fish.new("John")
+    @River1 = River.new("Esk")
+    @Fish1 = Fish.new("Nemo")
+    @Fish2 = Fish.new("Moby Dick")
+    @Fish3 = Fish.new("Jaws")
   end
 
 def test_bear_name
@@ -40,11 +42,13 @@ def test_check_stomach__2
 end
 
 def test_take_fish
+  @River1.add_fish_to_river(@Fish1)
+  @River1.add_fish_to_river(@Fish2)
   @Bear1.take_fish(@River1)
   #check bear has eaten fish
   assert_equal(1, @Bear1.check_stomach())
   #check river has no fish left
-  assert_equal(0, @River1.check_fish())
+  assert_equal(1, @River1.check_fish())
 end
 
 
